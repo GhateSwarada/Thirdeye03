@@ -1,0 +1,217 @@
+.main_container{
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.nav{
+    z-index: 20;
+    position: relative;
+}
+
+.circle{
+    height: 1000px;
+    width: 1000px;
+    background-image: radial-gradient(closest-side, rgba(145, 204, 220, 0.416), #000);
+    position: absolute;
+    left: -600px;
+    bottom: -600px;
+    z-index: 0;
+}
+
+.top_circle{
+    height: 1500px;
+    width: 1500px;
+    background-image: radial-gradient(closest-side, rgba(145, 204, 220, 0.416), #000);
+    position: absolute;
+    right: -600px;
+    top: -900px;
+    z-index: 0;
+}
+
+
+.search_bar{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+.search{
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.557);
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+    width: 500px;
+    border: none;
+    color: white;
+}
+
+.search::placeholder{
+    color: black;
+}
+
+.btn{
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    border-radius: 100%;
+    padding: 10px;
+    width: 50px;
+}
+
+.search_btn{
+    width: 20px;
+    margin-top: 5px;
+}
+
+.filter_list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.filters{
+    margin-top: 20px;
+    position: relative;
+    margin-left: 470px;
+}
+
+.filter{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.homepageContainer {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    position: relative;
+}
+
+.hamburger{
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: x-large;
+    margin-left: -420px;
+    cursor: pointer;
+    z-index: 20;
+    display: none;
+}
+
+.filter_menu{
+    flex-direction: column;
+    gap: 2px;
+    background-color: rgb(46, 42, 42);
+    width: 200px;
+    position: absolute;
+    z-index: 20;
+    margin-left: -350px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.filter{
+    background-color: transparent;
+    color: white;
+    font-size: medium;
+    margin-top: -5px;
+    z-index: 20;
+}
+
+.filter:hover{
+    color: #91CCDC;
+}
+
+
+/* Responsive Design for 1242px */
+@media screen and (max-width: 1242px) {
+    .circle {
+        height: 700px;
+        width: 700px;
+        left: -400px;
+        bottom: -400px;
+    }
+
+    .top_circle {
+        height: 1000px;
+        width: 1000px;
+        right: -400px;
+        top: -700px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .filter_list{
+        display: none;
+    }
+
+    .filter_menu{
+        display: block;
+    }
+
+}
+
+/* Responsive Design for 768px */
+@media screen and (max-width: 768px) {
+    .circle {
+        height: 500px;
+        width: 500px;
+        left: -300px;
+        bottom: -300px;
+    }
+
+    .top_circle {
+        height: 800px;
+        width: 800px;
+        right: -300px;
+        top: -600px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .circle {
+        height: 500px;
+        width: 500px;
+        left: -300px;
+        bottom: -300px;
+    }
+
+    .top_circle {
+        height: 800px;
+        width: 800px;
+        right: -300px;
+        top: -600px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .search{
+        padding: 15px;
+        width: 200px;
+    }
+
+    .search_btn{
+        width: 15px;
+        margin-top: 5px;
+    }
+}

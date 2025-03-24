@@ -1,0 +1,187 @@
+.item{
+    list-style-type: none;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.logo{
+    color: rgb(199, 192, 192);
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.menu{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: none;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.menu:hover{
+    color: black;
+    background-color: #91ccdcd3;
+    border-radius: 20px;
+ }
+
+.main{
+    background-color: rgba(24, 23, 23, 0.758);
+    display: flex;
+    padding: 12px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.txt{
+    color: rgb(249, 249, 249);
+    margin-left: 40px;
+}
+
+.nav{
+    display: flex;
+    z-index: 10;
+}
+
+.menubar{
+    margin-left: 50%;
+    position: relative;
+    z-index: 5;
+}
+
+.hamburger {
+    display: none; /* Hide hamburger icon by default */
+    font-size: 30px;
+    background: none;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    color: white;
+    cursor: pointer;
+}
+  
+
+@media (max-width: 1281px) {
+    .hamburger {
+        display: block; /* Show hamburger on small screens */
+        position: fixed;
+        top: 15px;
+        right: 20px;
+      }
+    
+      .nav {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack items vertically */
+        position: fixed;
+        top: 50px;
+        right: 0;
+        left: auto;
+        background-color: rgb(24, 23, 23);
+        width: 15%;
+        z-index: 20;
+        padding: 40px;
+      }
+  
+      .menubar {
+          position: relative;
+          z-index: 25; /* Ensure the hamburger menu stays above other content */
+        }
+    
+      .nav.show {
+        display: flex; /* Show menu when 'show' class is added */
+      }
+    
+      .item {
+        margin-left: 0;
+        margin-top: 25px;
+        text-align: center;
+        width: 100%;
+      }
+}
+
+
+  /* Show the hamburger icon and hide menu on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Show hamburger on small screens */
+      position: fixed;
+      top: 15px;
+      right: 20px;
+    }
+  
+    .nav {
+      display: none; /* Hide menu by default */
+      flex-direction: column; /* Stack items vertically */
+      position: fixed;
+      top: 50px;
+      right: 0;
+      left: auto;
+      background-color: rgb(24, 23, 23);
+      width: 25%;
+      z-index: 20;
+      padding: 40px;
+    }
+
+    .menubar {
+        position: relative;
+        z-index: 25; /* Ensure the hamburger menu stays above other content */
+      }
+  
+    .nav.show {
+      display: flex; /* Show menu when 'show' class is added */
+    }
+  
+    .item {
+      margin-left: 0;
+      margin-top: 25px;
+      text-align: center;
+      width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+  .hamburger {
+    display: block; /* Show hamburger on small screens */
+    position: fixed;
+    top: 15px;
+    right: 20px;
+  }
+
+  .nav {
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack items vertically */
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: auto;
+    background-color: rgb(24, 23, 23);
+    width: 40%;
+    z-index: 20;
+    padding: 40px;
+  }
+
+  .menubar {
+      position: relative;
+      z-index: 25; /* Ensure the hamburger menu stays above other content */
+    }
+
+  .nav.show {
+    display: flex; /* Show menu when 'show' class is added */
+  }
+
+  .item {
+    margin-left: 0;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+
+

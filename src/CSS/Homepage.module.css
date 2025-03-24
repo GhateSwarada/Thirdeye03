@@ -1,0 +1,146 @@
+
+.container {
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.nav{
+    z-index: 20;
+    position: relative;
+}
+
+.circle{
+    height:1000px;
+    width: 1000px;
+    background-image: radial-gradient(closest-side, rgba(145, 204, 220, 0.416), #000);
+    position: absolute;
+    left: -700px;
+    top: -190px;
+    z-index: 0;
+}
+
+.top_circle{
+    height:1000px;
+    width: 1000px;
+    background-image: radial-gradient(closest-side, rgba(145, 204, 220, 0.416), #000);
+    position: absolute;
+    right: -400px;
+    top: -500px;
+    z-index: 0;
+}
+
+.heading{
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 120px;
+}
+
+.search_bar{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.search{
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.557);
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+    width: 500px;
+    border: none;
+}
+
+.search::placeholder{
+    color: black;
+}
+
+.btn{
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    border-radius: 100%;
+    padding: 10px;
+    width: 50px;
+}
+
+.search_btn{
+    width: 15px;
+    margin-top: 5px;
+}
+
+/* Homepage.module.css */
+
+.homepageContainer {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 10;
+  position: relative;
+}
+
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 1024px) {
+    .circle, .top_circle {
+        height: 650px;
+        width: 650px;
+    }
+
+    .circle {
+        left: -500px;
+        top: -150px;
+    }
+
+    .top_circle {
+        right: -300px;
+        top: -350px;
+    }
+}
+
+@media (max-width: 360px) {
+    .circle, .top_circle {
+        height: 450px;
+        width: 450px;
+    }
+
+    .circle {
+        left: -250px;
+        top: -150px;
+    }
+
+    .top_circle {
+        display: none;
+    }
+
+    .search{
+        padding: 20px;
+        background-color: rgba(128, 128, 128, 0.557);
+        border-radius: 30px;
+        position: relative;
+        z-index: 10;
+        width: 250px;
+        border: none;
+    }
+
+    .heading{
+        color: white;
+        font-size: large;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 120px;
+    }
+}

@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Brittany';
+    src: url('/public/fonts/BrittanySignature.ttf') format('truetype'); /* Update the path as necessary */
+}
+
+.footer_container{
+    height: 80vh;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .circle{
+    height: 1000px;
+    width: 1000px;
+    background-image: radial-gradient(closest-side, rgba(145, 204, 220, 0.416), #000);
+    position: absolute;
+    left: -600px;
+    bottom: -600px;
+    z-index: 0;
+}
+
+.top_circle{
+    height: 1500px;
+    width: 1500px;
+    background-image: radial-gradient(closest-side, rgba(145, 204, 220, 0.416), #000);
+    position: absolute;
+    right: -600px;
+    top: -900px;
+    z-index: 0;
+} */
+
+.flex_container{
+    display: flex;
+    gap: 100px;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.right_side{
+    z-index: 10;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(49, 47, 47, 0.584);
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.heading{
+    color: white;
+    font-size: x-large;
+}
+
+.input{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.btn{
+    margin-top: 30px;
+    padding: 10px;
+    width: 120px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,rgb(59, 197, 235) ,black);
+    border: none;
+    color: white;
+}
+
+.left_side{
+    z-index: 10;
+    position: relative;
+}
+
+.thanktext{
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+
+.logos{
+    display: flex;
+}
+
+.yt{
+    height: 60px;
+}
+
+.inst{
+    height: 45px;
+    margin-top: 8px;
+}
+
+.name{
+    color: white;
+    font-family: 'Brittany', sans-serif;
+    font-size: x-large;
+}
+
+.dev{
+    z-index: 10;
+    position: relative;
+    color: white;
+    font-size: x-large;
+    margin-top: 20px;
+}
+@media (max-width: 1005px) {
+    .flex_container {
+        flex-direction: column;
+        gap: 2px;
+        padding: 50px;
+        height: auto;
+    }
+
+    .right_side {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .left_side {
+        text-align: center;
+    }
+
+    .input {
+        width: 80%;
+    }
+
+    .btn {
+        width: 100px;
+    }
+
+    .logos{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .inst{
+        margin-top: -1px;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex_container {
+        padding: 30px;
+        gap: 2px;
+    }
+
+    .right_side {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .thanktext {
+        font-size: large;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .logos {
+        justify-content: center;
+    }
+
+    .yt, .inst {
+        height: 40px;
+    }
+}

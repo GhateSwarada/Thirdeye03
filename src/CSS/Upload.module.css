@@ -1,0 +1,188 @@
+.container{
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav{
+    position: relative;
+    z-index: 10;
+}
+
+.title{
+    color: white;
+    font-size: x-large;
+    z-index: 10;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 0px;
+}
+
+.circle{
+    height: 1100px;
+    width: 1100px;
+    background-image: radial-gradient(closest-side, rgba(145, 204, 220, 0.416), #000);
+    position: absolute;
+    left: -300px;
+    top: -500px;
+}
+
+.bottom_circle{
+    height:1100px;
+    width: 1100px;
+    background-image: radial-gradient(closest-side, rgba(145, 204, 220, 0.416), #000);
+    position: absolute;
+    right: -350px;
+    bottom: -450px;
+}
+
+.flexContaint{
+    position: absolute;
+    display: flex;
+    gap: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.input_box{
+    z-index: 10;
+    position: relative;
+    border: 2px dashed white;
+    background-color: rgba(199, 199, 199, 0.126);
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    height: 350px;
+    width: 350px;
+}
+
+.txt{
+    margin-top: 100px;
+    color: white;
+}
+
+.imgForm{
+    z-index: 10;
+    position: relative;
+    padding: 20px;
+    background-color: transparent;
+    width: 400px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.input{
+    width: 350px;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: white;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.btn{
+    padding: 12px;
+    border-radius: 20px;
+    width: 100px;
+    margin-top: 30px;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.preview{
+    background-color: rgba(85, 79, 79, 0.393);
+    padding: 12px;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: auto;
+    border: 2px white dashed;
+}
+
+@media (max-width: 1463px) {
+    .circle, .bottom_circle {
+        height: 900px;
+        width: 900px;
+    }
+
+    .flexContaint {
+        gap: 50px;
+    }
+
+    .input_box {
+        height: 300px;
+        width: 300px;
+        padding: 40px;
+    }
+
+    .txt {
+        margin-top: 80px;
+    }
+
+    .imgForm {
+        width: 350px;
+    }
+
+    .input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 923px) {
+    .circle, .bottom_circle {
+        height: 700px;
+        width: 700px;
+    }
+
+    .title {
+        font-size: large;
+        margin-top: 100px;
+    }
+
+    .flexContaint {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        top: 55%;
+    }
+
+    .input_box {
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        margin-top: -100px;
+    }
+
+    .txt {
+        margin-top: 50px;
+        font-size: small;
+    }
+
+    .imgForm {
+        width: 300px;
+    }
+
+    .input {
+        width: 250px;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 90px;
+        font-size: small;
+    }
+}
