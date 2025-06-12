@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# 👁️ Thirdeye03: Royalty-Free Image Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thirdeye03 is a modern, full-stack web application designed to provide users with a seamless experience for finding and downloading high-quality, royalty-free images. This platform combines a dynamic **React.js** frontend with a robust **Spring Boot** backend, utilizing **Cloudinary** for efficient image storage and delivery, and **Firebase Firestore** for flexible data management. Secure authentication and authorization are handled via **JWT Tokens**, ensuring a safe environment for users.
 
-## Available Scripts
+## ✨ Key Features
 
-In the project directory, you can run:
+* **Extensive Image Library:** Browse and discover a wide collection of royalty-free images.
 
-### `npm start`
+* **User Authentication:** Secure user registration and login powered by JWT for token-based authentication.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Image Upload & Management:** Users can upload their own images, managed efficiently by Cloudinary.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Search & Filtering:** Powerful search capabilities to quickly find images by keywords or categories.
 
-### `npm test`
+* **High-Performance Image Delivery:** Leveraging Cloudinary CDN for fast and optimized image loading.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Real-time Data Storage:** Firebase Firestore provides a NoSQL database for flexible data persistence and real-time updates.
 
-### `npm run build`
+* **Responsive User Interface:** Built with React.js and custom CSS for an intuitive and mobile-friendly experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Robust RESTful API:** A Spring Boot backend provides well-structured REST endpoints for all data operations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Technologies & Tools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Frontend:**
 
-### `npm run eject`
+  * **React.js:** A JavaScript library for building user interfaces.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  * **CSS:** For styling and responsive design.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * **Firebase Firestore:** NoSQL cloud database for flexible data storage.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* **Backend:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  * **Spring Boot:** Framework for building the backend application.
 
-## Learn More
+  * **Spring JPA:** For database interaction (with a relational database, though Firestore is also used for specific data).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  * **REST API:** Standard for communication between frontend and backend.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  * **JWT (JSON Web Tokens):** For secure user authentication and authorization.
 
-### Code Splitting
+* **Cloud Services:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  * **Cloudinary:** Cloud-based image and video management solution for storing, optimizing, and delivering media.
 
-### Analyzing the Bundle Size
+## 🛠️ Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-### Making a Progressive Web App
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* **Node.js & npm (or Yarn):** For running the React.js frontend.
 
-### Advanced Configuration
+* **Java Development Kit (JDK) 11 or higher:** For the Spring Boot backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* **Maven (or Gradle):** For building the Spring Boot project.
 
-### Deployment
+* **Firebase Project:** A Firebase project configured with Firestore.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* **Cloudinary Account:** A Cloudinary account with API credentials.
 
-### `npm run build` fails to minify
+* **An IDE:** Such as VS Code, IntelliJ IDEA, or Eclipse.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Installation and Running
+
+#### 1. Backend Setup
+
+1. **Clone the repository:**
+
+
+git clone https://github.com/GhateSwarada/Thirdeye03.git
+
+
+2. **Navigate to the backend directory:**
+
+
+cd Thirdeye03/backend # Assuming backend is in a 'backend' folder
+
+
+3. **Build the project:**
+
+
+mvn clean install
+
+
+4. **Run the Spring Boot application:**
+
+
+mvn spring-boot:run
+
+
+The backend will typically start on `http://localhost:8080`.
+
+#### 2. Frontend Setup
+
+1. **Navigate to the frontend directory:**
+
+
+cd Thirdeye03/frontend # Assuming frontend is in a 'frontend' folder
+
+
+2. **Install dependencies:**
+
+
+npm install
+
+or yarn install
+
+3. **Start the React development server:**
+
+
+npm start
+
+or yarn start
+
+The frontend will typically open in your browser at `http://localhost:3000`.
+
+## 🖥️ Usage
+
+1. Open your web browser and navigate to `http://localhost:3000`.
+
+2. Register a new user account or log in if you already have one.
+
+3. Browse the collection of royalty-free images.
+
+4. Upload your own images (if enabled for users).
+
+5. Search for specific images using the search bar.
+
